@@ -1,0 +1,190 @@
+/*** general / header ***/
+
+article.coupon,
+div.coupon-body {
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto 0 auto;
+}
+
+.coupon header {
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #C93042;
+  text-align: center;
+  padding: .2em 2em;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*** typography ***/
+
+body {
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+.coupon h1,
+.coupon h2,
+button.cta_button p {
+  font-family: serif;
+}
+
+.coupon h1 {
+  font-size: 5em;
+}
+
+.coupon h2 {
+  font-size: 3.3em;
+}
+
+.coupon h3,
+.coupon p {
+  font-family: sans-serif;
+  line-height: 1.2em;
+}
+
+.coupon h3 {
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.coupon p {
+  font-size: 1.8rem;
+}
+
+.btn-label {
+  font-family: "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 1.1em;
+  margin: auto;
+}
+
+/*** main image ***/
+
+div.coupon-body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 60vh;
+  background-image: url("images/coupon-image.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+
+}
+
+/*** coupon details ***/
+
+section.coupon-details {
+  background-color: #E35764;
+  position: absolute;
+  bottom: 0;
+  right: 2.5em;
+  height: 520px;
+  width: 560px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 1em 1em 0 0;
+  padding: .5em 1.4em 1em 1.4em;
+}
+
+/*** button ***/
+
+button.cta_button {
+  background-color: #F4C7C0;
+  width: 85%;
+  position: absolute;
+  left: 3em;
+  border-radius: 1.8em;
+  padding: .8em 1em;
+  box-sizing: border-box;
+  color: #512615;
+}
+
+.cta_button .right-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  right: 2.5em;
+  float: right;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 2.5em solid transparent;
+  border-bottom: 2.5em solid transparent;
+  border-left: 2.5em solid #DD5C3D;
+}
+
+/* MEDIA QUERIES */
+
+/* laptops and large tablets */
+@media all and (max-width: 1399px) {
+
+  body {
+    font-size: 1.6em;
+  }
+
+  .coupon header {
+    line-height: 1em;
+  }
+
+  .coupon h1 {
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  section.coupon-details {
+    height: 560px;
+    right: -1em;
+  }
+
+
+}
+
+/* large smartphones, small tablets & tablets */
+@media all and (max-width: 1110px) {
+
+  body {
+    font-size: 1.4em;
+  }
+
+  .coupon h1 {
+    font-size: 3.5em;
+  }
+
+  .coupon header {
+    line-height: 1em;
+  }
+
+}
+
+/* smartphones */
+@media all and (max-width: 600px) {
+
+  body {
+    font-size: 1.4em;
+  }
+
+  .coupon h1 {
+    font-size: 3.8em;
+  }
+
+  .coupon header {
+    padding: 4em 1em;
+  }
+
+  article.coupon-body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  section.coupon-details {
+    width: 100%;
+    border: 1px solid yellow;
+  }
+
+}
